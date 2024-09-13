@@ -2,8 +2,8 @@
 Procedurally generated articulated objects specified in Universal Robot Description Format (URDF), and rendered using Mujoco.
 
 # Environment
-  Miniconda 24.7.1
-  Python 3.9.18
+  Miniconda 24.7.1\
+  Python 3.9.18\
   Ubuntu 22.04.4
 
 # Mujoco
@@ -28,8 +28,9 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 cd ~/.mujoco/mujoco210/bin
 ./simulate ../model/humanoid.xml
 
-# FOr Mujoco-py
+# For Mujoco-py
 Step 4 Install mujoco-py:
+``` 
 conda create --name mujoco_py python=3.8
 conda activate mujoco_py
 sudo apt update
@@ -42,6 +43,7 @@ pip install -r requirements.txt
 pip install -r requirements.dev.txt
 sudo apt-get install libglew-dev
 pip install -e . --no-cache
+```
 
 Step 6 run these commands
 conda activate mujoco_py
