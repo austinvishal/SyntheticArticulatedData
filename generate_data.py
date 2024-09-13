@@ -26,7 +26,7 @@ def main(args):
 		# set generator's target directory for train data
 		train_dir = os.path.join(args.dir, args.obj)
 		print('Generating training data in %s ' % train_dir)
-		os.makedirs(train_dir, exist_ok=False)
+		os.makedirs(train_dir, exist_ok=True)
 		scenegen.savedir = train_dir
 
 		# generate train scenes
@@ -34,7 +34,7 @@ def main(args):
 
 	# set generator's target directory for test data
 	test_dir = os.path.join(args.dir, args.obj + '-test')
-	os.makedirs(test_dir, exist_ok=False)
+	os.makedirs(test_dir, exist_ok=True)
 	print('Generating test data in %s ' % test_dir)
 	scenegen.savedir = test_dir
 
