@@ -46,31 +46,42 @@ pip install -e . --no-cache
 ```
 
 Step 6 run these commands
+``` 
 conda activate mujoco_py
 sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3
 sudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
 cd
 cd examples
 python3 setting_state.py
+```
 
 Dependencies needed:
+```
 pip install "Cython<3"
 pip install torchvision
 pip3 install opencv-python
 pip install matplotlib
 pip3 install pyro-ppl
 pip install transforms3d
+```
 
-# Open GL initalization failed
+#  Issues faced
+1. Open GL initalization failed
+```
 unset LD_PRELOAD
+```
 
-# FileExistsError: [Errno 17] File exists:
+2. FileExistsError: [Errno 17] File exists: in generate.py file
+```
 os.makedirs(test_dir, exist_ok=True)
+```
 
-#  anim.save(os.path.join(dir,'animation.mp4'), fps=30, extra_args=['-vcodec', 'libx264']),
-# writer = writer_cls(fps, **writer_kwargs)
-#  animation issue
+3. animation issue
+  anim.save(os.path.join(dir,'animation.mp4'), fps=30, extra_args=['-vcodec', 'libx264']),\
+   writer = writer_cls(fps, **writer_kwargs)
+``` 
 conda install -c conda-forge av
+```
 
 Setup:
 ```pip install -r requirements.txt```
