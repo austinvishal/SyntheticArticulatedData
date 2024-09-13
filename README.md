@@ -31,7 +31,7 @@ cd ~/.mujoco/mujoco210/bin
 # For Mujoco-py
 Step 4 Install mujoco-py:
 ``` 
-conda create --name mujoco_py python=3.8
+conda create --name mujoco_py python=3.9
 conda activate mujoco_py
 sudo apt update
 sudo apt-get install patchelf
