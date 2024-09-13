@@ -15,10 +15,12 @@ mkdir /home/username/.mujoco
 3. extract the library to the .mujoco folder
 4. include these lines in  .bashrc file:
 
-export LD_LIBRARY_PATH=/home/user_name/.mujoco/mujoco210/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
-export PATH="$LD_LIBRARY_PATH:$PATH"
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+``` 
+export LD_LIBRARY_PATH=/home/user_name/.mujoco/mujoco210/bin 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia 
+ export PATH="$LD_LIBRARY_PATH:$PATH" 
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so 
+```
 
 5. source .bashrc
 
