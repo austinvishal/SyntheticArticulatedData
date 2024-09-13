@@ -83,8 +83,7 @@ os.makedirs(test_dir, exist_ok=True)
 conda install -c conda-forge av
 ```
 
-Setup:
-```pip install -r requirements.txt```
+# Mujoco
 
 Example generation:
 ```python generate_data.py --n 10 --dir ./test --obj microwave --masked --debug```
