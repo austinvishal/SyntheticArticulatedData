@@ -45,6 +45,12 @@ git clone https://github.com/openai/mujoco-py
 cd mujoco-py
 pip install -r requirements.txt
 pip install -r requirements.dev.txt
+``` 
+Ifyou are using Python 3.8, Ubuntu 20.04, run extra one line (FOr python 3.9, ubuntu 22.04 it was not required)
+``` 
+python3 setup.py install
+``` 
+``` 
 sudo apt-get install libglew-dev
 pip install -e . --no-cache
 ```
