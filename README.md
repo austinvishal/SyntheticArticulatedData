@@ -38,7 +38,8 @@ sudo apt-get install patchelf
 sudo apt-get install python3-dev build-essential libssl-dev libffi-dev libxml2-dev  
 sudo apt-get install libxslt1-dev zlib1g-dev libglew1.5 libglew-dev python3-pip
 
-# Clone mujoco-py.
+# Clone mujoco-py
+
 cd ~/.mujoco
 git clone https://github.com/openai/mujoco-py
 cd mujoco-py
@@ -55,6 +56,7 @@ conda activate mujoco_py
 sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3
 sudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
 pip3 install -U 'mujoco-py<2.2,>=2.1'
+cd .mujoco/mujoco-py
 cd examples
 python3 setting_state.py
 ```
